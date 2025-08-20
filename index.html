@@ -23,13 +23,18 @@
 
   <section class="hero">
     <div class="container hero-inner">
-      <div>
+      <!-- Left text -->
+      <div class="hero-text">
         <h1>AWS / DevOps Engineer</h1>
         <p class="lead">Automating cloud infrastructure, CI/CD, and observability to ship faster and safer.</p>
         <div class="cta">
-          <a class="btn" href="https://github.com/karthik5041" target="_blank" rel="noopener">View Projects</a>
-          <a class="btn outline" href="mailto:karthikkatragadda5041@gmail.com">Contact Me</a>
+          <a class="btn" href="https://github.com/karthik5041" target="_blank">View Projects</a>
+          <a class="btn outline" href="mailto:katragaddakarthik2000@gmail.com">Contact Me</a>
         </div>
+      </div>
+      <!-- Right profile image -->
+      <div class="hero-photo">
+        <img src="/assets/profile.jpg" alt="Karthik Katragadda">
       </div>
     </div>
   </section>
@@ -38,57 +43,41 @@
     <div class="container">
       <h2>Highlighted Projects</h2>
       <div class="grid projects">
-
         <article class="card">
-          <a href="https://github.com/karthik5041" target="_blank" rel="noopener">
-            <img src="/assets/project-infra.jpg" alt="Terraform AWS Infra">
-            <div class="card-body">
-              <h3>Terraform AWS Infra</h3>
-              <p>IaC modules (VPC, ASG, ALB, RDS, S3) with reusable patterns and environment promotion.</p>
-            </div>
-          </a>
+          <img src="/assets/project-infra.jpg" alt="Terraform AWS Infra">
+          <div class="card-body">
+            <h3>Terraform AWS Infra</h3>
+            <p>IaC modules (VPC, ASG, ALB, RDS, S3) with reusable patterns and environment promotion.</p>
+          </div>
         </article>
-
         <article class="card">
-          <a href="https://github.com/karthik5041" target="_blank" rel="noopener">
-            <img src="/assets/project-aks.jpg" alt="Kubernetes Cluster">
-            <div class="card-body">
-              <h3>EKS / AKS Cluster</h3>
-              <p>Managed K8s with Helm and GitOps (Argo CD), blue/green rollouts and ingress hardening.</p>
-            </div>
-          </a>
+          <img src="/assets/project-aks.jpg" alt="Kubernetes Cluster">
+          <div class="card-body">
+            <h3>EKS / AKS Cluster</h3>
+            <p>Managed K8s with Helm and GitOps (Argo CD), blue/green rollouts and ingress hardening.</p>
+          </div>
         </article>
-
         <article class="card">
-          <a href="https://github.com/karthik5041" target="_blank" rel="noopener">
-            <img src="/assets/project-cicd.jpg" alt="CI/CD Pipeline">
-            <div class="card-body">
-              <h3>CI/CD Pipeline</h3>
-              <p>Jenkins multi-branch + SonarQube quality gates; GitHub PR checks; artifact versioning.</p>
-            </div>
-          </a>
+          <img src="/assets/project-cicd.jpg" alt="CI/CD Pipeline">
+          <div class="card-body">
+            <h3>CI/CD Pipeline</h3>
+            <p>Jenkins multi-branch + SonarQube quality gates; GitHub PR checks; artifact versioning.</p>
+          </div>
         </article>
-
         <article class="card">
-          <a href="https://github.com/karthik5041" target="_blank" rel="noopener">
-            <img src="/assets/project-observability.jpg" alt="Observability">
-            <div class="card-body">
-              <h3>Observability</h3>
-              <p>Grafana + Prometheus for SLIs/SLOs; CloudWatch/Datadog logs; alerting for error budgets.</p>
-            </div>
-          </a>
+          <img src="/assets/project-observability.jpg" alt="Observability">
+          <div class="card-body">
+            <h3>Observability</h3>
+            <p>Grafana + Prometheus for SLIs/SLOs; CloudWatch/Datadog logs; alerting for error budgets.</p>
+          </div>
         </article>
-
         <article class="card">
-          <a href="https://github.com/karthik5041" target="_blank" rel="noopener">
-            <img src="/assets/project-cost.jpg" alt="Cost Optimization">
-            <div class="card-body">
-              <h3>Cost Optimization</h3>
-              <p>Rightsizing EC2 / GPU nodes, ASG tuning, S3 lifecycle policies; 25% monthly savings.</p>
-            </div>
-          </a>
+          <img src="/assets/project-cost.jpg" alt="Cost Optimization">
+          <div class="card-body">
+            <h3>Cost Optimization</h3>
+            <p>Rightsizing EC2 / GPU nodes, ASG tuning, S3 lifecycle policies; 25% monthly savings.</p>
+          </div>
         </article>
-
       </div>
     </div>
   </section>
@@ -96,7 +85,7 @@
   <section id="stack" class="section alt">
     <div class="container">
       <h2>Me & My Tech Stack</h2>
-      <p class="muted">Docker · Kubernetes · Jenkins · Terraform · Ansible · Azure · GitHub · SonarQube · Java · AWS</p>
+      <p class="muted">Docker · Kubernetes · Jenkins · Terraform · Ansible · Azure · GitHub · SonarQube · Java</p>
       <div class="logos">
         <img src="/assets/devops.png" alt="DevOps">
         <img src="/assets/java.png" alt="Java">
@@ -116,7 +105,7 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact</h2>
-      <p class="muted">Prefer email? <a href="mailto:karthikkatragadda5041@gmail.com">karthikkatragadda5041@gmail.com</a></p>
+      <p class="muted">Prefer email? <a href="mailto:katragaddakarthik2000@gmail.com">katragaddakarthik2000@gmail.com</a></p>
 
       <!-- Netlify Forms -->
       <form name="contact" method="POST" data-netlify="true" class="contact-form">
@@ -129,7 +118,7 @@
         <button type="submit" class="btn">Send Message</button>
       </form>
 
-      <p class="tiny muted">Once deployed on Netlify, enable <strong>Email notifications</strong> in Site settings → Forms → Notifications.</p>
+      <p class="tiny muted">Once deployed on Netlify, enable **Email notifications** in Site settings → Forms → Notifications.</p>
     </div>
   </section>
 
