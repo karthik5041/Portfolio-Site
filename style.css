@@ -49,14 +49,29 @@ body {
 .hero h1 {
   font-size: 56px;
   margin-bottom: 16px;
+}
+.gradient-text {
   background: linear-gradient(to right, #38bdf8, #a855f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.typed-text {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+  background: linear-gradient(to right, #38bdf8, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-sub {
+  font-size: 18px;
+  margin: 12px 0 0;
+  color: #cbd5e1;
+}
 .hero .lead {
   font-size: 20px;
   max-width: 720px;
-  margin: 0 auto;
+  margin: 16px auto;
   color: #cbd5e1;
 }
 .cta .btn {
@@ -109,6 +124,8 @@ h2 { margin: 0 0 24px; font-size: 32px; }
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: inherit;
 }
 .card:hover {
   transform: translateY(-10px) scale(1.02);
@@ -141,12 +158,6 @@ h2 { margin: 0 0 24px; font-size: 32px; }
 .logos img:hover {
   transform: scale(1.1) rotate(3deg);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-/* Tilt smoothness */
-.card, .about-photo img, .logos img {
-  transform-style: preserve-3d;
-  will-change: transform;
 }
 
 /* Contact */
