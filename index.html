@@ -115,6 +115,8 @@
       <h2>Hire Me</h2>
       <p>Want to work together? Feel free to reach out!</p>
       <form name="contact" method="POST" data-netlify="true" action="thanks.html" class="contact-form">
+        <!-- Hidden input required for Netlify forms -->
+        <input type="hidden" name="form-name" value="contact" />
         <div class="row">
           <input type="text" name="name" placeholder="Your Name" required/>
           <input type="email" name="email" placeholder="Your Email" required/>
