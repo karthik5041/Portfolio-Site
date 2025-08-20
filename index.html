@@ -1,149 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Karthik Katragadda • DevOps Portfolio</title>
-  <link rel="icon" href="/assets/favicon.svg">
-  <link rel="stylesheet" href="style.css">
-  <!-- Typed.js -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karthik Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
   <!-- Navbar -->
-  <header class="nav">
+  <nav class="nav">
     <div class="container">
       <div class="brand">Karthik</div>
-      <nav>
-        <a href="https://github.com/karthik5041" target="_blank" rel="noopener">Projects</a>
-        <a href="#about">About Me</a>
-        <a href="#stack">Tech Stack</a>
-        <a href="#contact">Contact</a>
-        <a class="btn resume" target="_blank" href="/assets/Karthik_Katragadda_Resume.pdf">Download Resume</a>
-      </nav>
+      <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Hire Me</a>
+        <a href="resume.pdf" class="btn resume" target="_blank">Resume</a>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container hero-inner">
-      <h1>Hi! I'm <span class="gradient-text">Karthik Katragadda</span></h1>
-      <h2 class="typed-text"></h2>
-      <p class="hero-sub">
-        I’m a <strong>DevOps Engineer</strong> and here is my portfolio website.<br>
-        Here you’ll learn about my journey as a DevOps Engineer.
-      </p>
+    <div class="container">
+      <h1>Hi, I'm <span class="gradient-text">Karthik</span></h1>
+      <div class="typed-text"></div>
+      <p class="hero-sub">Building scalable and reliable systems with DevOps & Cloud</p>
+      <p class="lead">I specialize in AWS, Kubernetes, CI/CD, Terraform, Monitoring, and modern DevOps practices to improve system reliability and accelerate deployments.</p>
       <div class="cta">
-        <a class="btn" href="https://github.com/karthik5041" target="_blank" rel="noopener">View Projects</a>
-        <a class="btn outline" href="mailto:katragaddakarthik2000@gmail.com">Contact Me</a>
+        <!-- Removed View Projects -->
+        <a href="#contact" class="btn">Hire Me</a>
       </div>
     </div>
   </section>
 
-  <!-- About Me -->
+  <!-- About Section -->
   <section id="about" class="section alt">
-    <div class="container about">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <div class="about-photo">
-          <img src="/assets/profile.jpg" alt="Karthik Katragadda">
-        </div>
-        <div class="about-text">
-          <p>
-            Hi Everyone 👋, my name is <strong>Karthik Katragadda</strong>.  
-            I am a <strong>Cloud & DevOps Engineer</strong> with 3+ years of experience working on AWS, Azure, Kubernetes, Terraform, Jenkins, and CI/CD automation.  
-          </p>
-          <p>
-            Currently, I am working with <strong>Deloitte</strong> as an AWS DevOps Engineer, where I design scalable infrastructure, automate deployments, and optimize cloud costs.  
-          </p>
-          <p>
-            My expertise also includes <strong>Python, Golang, and ML concepts</strong>, helping me bridge DevOps with AI-driven workloads. 🚀  
-          </p>
-        </div>
+    <div class="container about-grid">
+      <div class="about-photo">
+        <img src="assets/images/profile.jpg" alt="Profile photo"/>
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello! I'm Karthik, a DevOps Engineer with a passion for automation, scalable cloud infrastructure, and reliable CI/CD pipelines.</p>
+        <p>I work with modern DevOps tools and cloud technologies to help businesses deliver faster and operate more reliably.</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
-      <h2>Highlighted Projects</h2>
+      <h2>Projects</h2>
       <div class="grid projects">
-        <a href="https://github.com/karthik5041" target="_blank" rel="noopener" class="card">
-          <img src="/assets/project-infra.jpg" alt="Terraform AWS Infra">
+        <a href="https://github.com/yourusername/terraform" class="card" target="_blank">
+          <img src="assets/images/project1.jpg" alt="Terraform project"/>
           <div class="card-body">
-            <h3>Terraform AWS Infra</h3>
-            <p>IaC modules (VPC, ASG, ALB, RDS, S3) with reusable patterns and environment promotion.</p>
+            <h3>Terraform Infrastructure</h3>
+            <p>Infrastructure as Code with Terraform for cloud automation.</p>
           </div>
         </a>
-        <a href="https://github.com/karthik5041" target="_blank" rel="noopener" class="card">
-          <img src="/assets/project-aks.jpg" alt="Kubernetes Cluster">
+        <a href="https://github.com/yourusername/eks" class="card" target="_blank">
+          <img src="assets/images/project2.jpg" alt="EKS cluster"/>
           <div class="card-body">
-            <h3>EKS / AKS Cluster</h3>
-            <p>Managed K8s with Helm and GitOps (Argo CD), blue/green rollouts and ingress hardening.</p>
+            <h3>Kubernetes on EKS</h3>
+            <p>Highly available Kubernetes cluster deployed on AWS EKS.</p>
           </div>
         </a>
-        <a href="https://github.com/karthik5041" target="_blank" rel="noopener" class="card">
-          <img src="/assets/project-cicd.jpg" alt="CI/CD Pipeline">
+        <a href="https://github.com/yourusername/cicd" class="card" target="_blank">
+          <img src="assets/images/project3.jpg" alt="CI/CD pipeline"/>
           <div class="card-body">
             <h3>CI/CD Pipeline</h3>
-            <p>Jenkins multi-branch + SonarQube quality gates; GitHub PR checks; artifact versioning.</p>
+            <p>Automated CI/CD pipeline with GitHub Actions and ArgoCD.</p>
           </div>
         </a>
-        <a href="https://github.com/karthik5041" target="_blank" rel="noopener" class="card">
-          <img src="/assets/project-observability.jpg" alt="Observability">
+        <a href="https://github.com/yourusername/monitoring" class="card" target="_blank">
+          <img src="assets/images/project4.jpg" alt="Monitoring"/>
           <div class="card-body">
-            <h3>Observability</h3>
-            <p>Grafana + Prometheus for SLIs/SLOs; CloudWatch/Datadog logs; alerting for error budgets.</p>
-          </div>
-        </a>
-        <a href="https://github.com/karthik5041" target="_blank" rel="noopener" class="card">
-          <img src="/assets/project-cost.jpg" alt="Cost Optimization">
-          <div class="card-body">
-            <h3>Cost Optimization</h3>
-            <p>Rightsizing EC2 / GPU nodes, ASG tuning, S3 lifecycle policies; 25% monthly savings.</p>
+            <h3>Monitoring Stack</h3>
+            <p>Prometheus and Grafana monitoring for production workloads.</p>
           </div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Tech Stack -->
-  <section id="stack" class="section alt">
+  <!-- Skills Section -->
+  <section id="skills" class="section alt">
     <div class="container">
-      <h2>My Tech Stack</h2>
-      <p class="muted">AWS · Azure · Docker · Kubernetes · Jenkins · Terraform · Ansible · GitHub · SonarQube · Python · Golang · Bash · Java</p>
+      <h2>Skills</h2>
       <div class="logos">
-        <img src="/assets/aws.png" alt="AWS" title="AWS">
-        <img src="/assets/azure.png" alt="Azure" title="Azure">
-        <img src="/assets/docker.png" alt="Docker" title="Docker">
-        <img src="/assets/kubernetes.png" alt="Kubernetes" title="Kubernetes">
-        <img src="/assets/jenkins.png" alt="Jenkins" title="Jenkins">
-        <img src="/assets/terraform.png" alt="Terraform" title="Terraform">
-        <img src="/assets/ansible.png" alt="Ansible" title="Ansible">
-        <img src="/assets/github.png" alt="GitHub" title="GitHub">
-        <img src="/assets/sonarqube.png" alt="SonarQube" title="SonarQube">
-        <img src="/assets/images/python.png" alt="Python" title="Python">
-        <img src="/assets/images/golang.png" alt="Golang" title="Golang">
-        <img src="/assets/images/bash.png" alt="Bash" title="Bash">
-        <img src="/assets/images/java.png" alt="Java" title="Java">
+        <img src="assets/images/aws.png" alt="AWS"/>
+        <img src="assets/images/docker.png" alt="Docker"/>
+        <img src="assets/images/kubernetes.png" alt="Kubernetes"/>
+        <img src="assets/images/terraform.png" alt="Terraform"/>
+        <img src="assets/images/python.png" alt="Python"/>
+        <img src="assets/images/golang.png" alt="Golang"/>
+        <img src="assets/images/java.png" alt="Java"/>
+        <img src="assets/images/bash.png" alt="Bash"/>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
-      <h2>Contact</h2>
-      <p class="muted">Prefer email? <a href="mailto:katragaddakarthik2000@gmail.com">katragaddakarthik2000@gmail.com</a></p>
-      <form name="contact" method="POST" data-netlify="true" class="contact-form">
-        <input type="hidden" name="form-name" value="contact">
+      <h2>Hire Me</h2>
+      <p>Want to work together? Feel free to reach out!</p>
+      <form class="contact-form">
         <div class="row">
-          <input name="name" type="text" placeholder="Your name" required>
-          <input name="email" type="email" placeholder="Your email" required>
+          <input type="text" placeholder="Your Name" required/>
+          <input type="email" placeholder="Your Email" required/>
         </div>
-        <textarea name="message" rows="6" placeholder="Your message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </div>
   </section>
@@ -151,27 +123,21 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <span>© 2025 Karthik Katragadda</span>
-      <a href="#top">Back to top ↑</a>
+      <div>© 2025 Karthik. All rights reserved.</div>
+      <div>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      </div>
     </div>
   </footer>
 
-  <!-- Typed.js Init -->
+  <!-- Typed.js Script -->
   <script>
-    document.addEventListener("DOMContentLoaded", function(){
-      new Typed(".typed-text", {
-        strings: [
-          "AWS DevOps Engineer",
-          "Azure DevOps Engineer",
-          "Site Reliability Engineer"
-        ],
-        typeSpeed: 60,
-        backSpeed: 40,
-        backDelay: 1500,
-        loop: true,
-        showCursor: true,
-        cursorChar: "|"
-      });
+    new Typed('.typed-text', {
+      strings: ["AWS & DevOps Engineer", "Cloud Infrastructure Specialist", "CI/CD & Automation Expert"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
     });
   </script>
 </body>
